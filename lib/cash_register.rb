@@ -13,6 +13,8 @@ class CashRegister
   end
 
   def apply_discount
-
+    if @discount > 0
+      final_price = @total*(@discount/100)
+      final_price
   end
 end
